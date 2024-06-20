@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <h1>Hello, I am Raja using Vite| Notes: </h1>
+    <h1>Hello, I am Raja using ViteReact| Notes: </h1>
   );
 }
 
