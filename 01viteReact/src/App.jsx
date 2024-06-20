@@ -1,12 +1,20 @@
-import { useState } from 'react'
 
 
+import Chai from "./chai"
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
-    <h1>Hello, I am Raja using ViteReact| Notes: </h1>
-  );
+ 
+  <div>
+ <Chai/>
+ <p>you can return only one element</p>
+
+ <h4>That one returning element can contain many element to return</h4>
+
+ <p>This was done by vite</p>
+  </div>
+  )
 }
 
 export default App
