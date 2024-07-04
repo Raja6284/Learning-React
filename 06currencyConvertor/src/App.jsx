@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { InputBox } from './components'
 import UseCurrencyInfo from './hooks/UseCurrencyInfo'
 import './App.css'
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
      <h1 className='text-3xl bg-orange-500'>Currency App</h1>
-     <UseCurrencyInfo/>
+     
     </>
   )
 }
