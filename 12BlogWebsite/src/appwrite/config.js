@@ -9,7 +9,7 @@ export class Service{
         this.client
             .setEndpoint(conf.appwriteUrl)
             .setProject(conf.appwriteProjectId)
-        this.databases = new Databases(thsi.client);
+        this.databases = new Databases(this.client);
         this.bucket = new Storage(this.client);
     }
 
@@ -77,7 +77,7 @@ export class Service{
         }
     }
 
-    async getPost(queries = [Query.equal("status","active")]){
+    async getPosts(queries = [Query.equal("status","active")]){
         try{
             return await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
